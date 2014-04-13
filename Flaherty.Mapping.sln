@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Services", "src\Flaherty.Services\Flaherty.Services.csproj", "{BB713018-DA59-4FEC-B81A-3EB6FA5E0FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping.BingMaps", "src\Flaherty.Mapping.BingMaps\Flaherty.Mapping.BingMaps.csproj", "{2D5ACA35-0525-43F2-88B1-72430E2C7DE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C7859E79-A820-42A0-8573-7CE986CCC876}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F2260D16-CB69-4B80-8CC6-62E9E4C0DAB4}"
+	ProjectSection(SolutionItems) = preProject
+		build.ps1 = build.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E34A34B4-38C9-4565-ADEA-2F5EC418FFDB}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping.BingMaps.Tests", "test\Flaherty.Mapping.BingMaps.Tests\Flaherty.Mapping.BingMaps.Tests.csproj", "{FDF41949-C46D-456C-AD4A-335CDD021710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping.BingMaps.WebControls", "src\Flaherty.Mapping.BingMaps.WebControls\Flaherty.Mapping.BingMaps.WebControls.csproj", "{649533A2-0E79-409B-8A00-3099A6DA1099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping.MapQuest", "src\Flaherty.Mapping.MapQuest\Flaherty.Mapping.MapQuest.csproj", "{AF8D85D3-EC3A-478B-A5A5-5FABC11FFA73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping.BingMaps.WebControls.SampleApp", "src\Flaherty.Mapping.BingMaps.WebControls.SampleApp\Flaherty.Mapping.BingMaps.WebControls.SampleApp.csproj", "{5A1197ED-C03A-4F4A-A5AC-2A079C2EE324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping", "src\Flaherty.Mapping\Flaherty.Mapping.csproj", "{3C6FB117-CAC2-48C9-BD99-A52659C88C2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping.MapQuest.Tests", "test\Flaherty.Mapping.MapQuest.Tests\Flaherty.Mapping.MapQuest.Tests.csproj", "{55B7C9F4-0B7D-44E1-A76A-BB5DF534A00B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping.MapQuest.Javascript", "src\Flaherty.Mapping.MapQuest.Javascript\Flaherty.Mapping.MapQuest.Javascript.csproj", "{4F807EDB-22CE-492C-A935-9AA93CBA7214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping.MapQuest.WebControls", "src\Flaherty.Mapping.MapQuest.WebControls\Flaherty.Mapping.MapQuest.WebControls.csproj", "{DFE8C7E2-3296-4F4A-821A-CEFCBE2206BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping.MapQuest.WebControls.SampleApp", "src\Flaherty.Mapping.MapQuest.WebControls.SampleApp\Flaherty.Mapping.MapQuest.WebControls.SampleApp.csproj", "{0096DF05-CFA4-4835-A9D9-F7305C9604EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Mapping.BingMaps.Javascript", "src\Flaherty.Mapping.BingMaps.Javascript\Flaherty.Mapping.BingMaps.Javascript.csproj", "{06E890C0-BDDB-43E1-9917-C363C6894191}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB713018-DA59-4FEC-B81A-3EB6FA5E0FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB713018-DA59-4FEC-B81A-3EB6FA5E0FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB713018-DA59-4FEC-B81A-3EB6FA5E0FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB713018-DA59-4FEC-B81A-3EB6FA5E0FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D5ACA35-0525-43F2-88B1-72430E2C7DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D5ACA35-0525-43F2-88B1-72430E2C7DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D5ACA35-0525-43F2-88B1-72430E2C7DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D5ACA35-0525-43F2-88B1-72430E2C7DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF41949-C46D-456C-AD4A-335CDD021710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF41949-C46D-456C-AD4A-335CDD021710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF41949-C46D-456C-AD4A-335CDD021710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF41949-C46D-456C-AD4A-335CDD021710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{649533A2-0E79-409B-8A00-3099A6DA1099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649533A2-0E79-409B-8A00-3099A6DA1099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649533A2-0E79-409B-8A00-3099A6DA1099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649533A2-0E79-409B-8A00-3099A6DA1099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8D85D3-EC3A-478B-A5A5-5FABC11FFA73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8D85D3-EC3A-478B-A5A5-5FABC11FFA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8D85D3-EC3A-478B-A5A5-5FABC11FFA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8D85D3-EC3A-478B-A5A5-5FABC11FFA73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A1197ED-C03A-4F4A-A5AC-2A079C2EE324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1197ED-C03A-4F4A-A5AC-2A079C2EE324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1197ED-C03A-4F4A-A5AC-2A079C2EE324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1197ED-C03A-4F4A-A5AC-2A079C2EE324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C6FB117-CAC2-48C9-BD99-A52659C88C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C6FB117-CAC2-48C9-BD99-A52659C88C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C6FB117-CAC2-48C9-BD99-A52659C88C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C6FB117-CAC2-48C9-BD99-A52659C88C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B7C9F4-0B7D-44E1-A76A-BB5DF534A00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B7C9F4-0B7D-44E1-A76A-BB5DF534A00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B7C9F4-0B7D-44E1-A76A-BB5DF534A00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B7C9F4-0B7D-44E1-A76A-BB5DF534A00B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F807EDB-22CE-492C-A935-9AA93CBA7214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F807EDB-22CE-492C-A935-9AA93CBA7214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F807EDB-22CE-492C-A935-9AA93CBA7214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F807EDB-22CE-492C-A935-9AA93CBA7214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFE8C7E2-3296-4F4A-821A-CEFCBE2206BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE8C7E2-3296-4F4A-821A-CEFCBE2206BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE8C7E2-3296-4F4A-821A-CEFCBE2206BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE8C7E2-3296-4F4A-821A-CEFCBE2206BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0096DF05-CFA4-4835-A9D9-F7305C9604EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0096DF05-CFA4-4835-A9D9-F7305C9604EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0096DF05-CFA4-4835-A9D9-F7305C9604EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0096DF05-CFA4-4835-A9D9-F7305C9604EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06E890C0-BDDB-43E1-9917-C363C6894191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06E890C0-BDDB-43E1-9917-C363C6894191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06E890C0-BDDB-43E1-9917-C363C6894191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06E890C0-BDDB-43E1-9917-C363C6894191}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDF41949-C46D-456C-AD4A-335CDD021710} = {C7859E79-A820-42A0-8573-7CE986CCC876}
+		{55B7C9F4-0B7D-44E1-A76A-BB5DF534A00B} = {C7859E79-A820-42A0-8573-7CE986CCC876}
+	EndGlobalSection
+EndGlobal

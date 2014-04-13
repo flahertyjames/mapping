@@ -1,0 +1,39 @@
+﻿namespace Flaherty.Mapping.MapQuest.Javascript
+{
+    public enum PinColor
+    {
+        Blue,
+        Green,
+        Orange,
+        Purple,
+        White,
+        Yellow,
+        Blue1,
+        Blue2,
+        Blue3,
+        Blue4,
+        Bluegreen1,
+        Bluegreen2,
+        Bluegreen3,
+        Green1,
+        Green2,
+        Green3,
+        Green4,
+        Orange1,
+        Orange2,
+        Orange3,
+        Pink1,
+        Pink2,
+        Pink3,
+        Purple1,
+        Purple2,
+        Purple3,
+        Purple4,
+        Red1,
+        Red2,
+        White1,
+        Yellow1,
+        Yellow2,
+        Yellow3
+    }
+}

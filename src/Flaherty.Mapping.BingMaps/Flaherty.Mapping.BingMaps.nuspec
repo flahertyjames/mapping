@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Flaherty.Mapping.BingMaps</id>
+    <version>$version$</version>
+    <title>Flaherty.Mapping.BingMaps</title>
+    <authors>James Flaherty</authors>
+    <owners>James Flaherty</owners>
+    <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>-->
+    <projectUrl>https://github.com/flahertyjames/mapping</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Library to interact with Bing Maps API</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Bing Maps</tags>
+    <dependencies>
+      <dependency id="Flaherty.Services" />
+      <dependency id="Newtonsoft.Json" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="$bin$\v3.5\Flaherty.Mapping.dll" target="lib\net35" />
+    <file src="$bin$\v3.5\Flaherty.Mapping.BingMaps.dll" target="lib\net35" />
+    <file src="$bin$\v4.5\Flaherty.Mapping.dll" target="lib\net45" />
+    <file src="$bin$\v4.5\Flaherty.Mapping.BingMaps.dll" target="lib\net45" />
+  </files>
+</package>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Flaherty.Mapping.MapQuest.WebControls</id>
+    <version>$version$</version>
+    <title>Flaherty.Mapping.MapQuest.WebControls</title>
+    <authors>James Flaherty</authors>
+    <owners>James Flaherty</owners>
+    <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>-->
+    <projectUrl>https://github.com/flahertyjames/mapping</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Library to display Bing Maps in ASP.net web applications.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Bing Maps</tags>
+    <dependencies>
+      <dependency id="Flaherty.Mapping.MapQuest" />
+      <dependency id="Newtonsoft.Json" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="$bin$\v3.5\Flaherty.Mapping.dll" target="lib\net35" />
+    <file src="$bin$\v3.5\Flaherty.Mapping.MapQuest.Javascript.dll" target="lib\net35" />
+    <file src="$bin$\v3.5\Flaherty.Mapping.MapQuest.WebControls.dll" target="lib\net35" />
+    <file src="$bin$\v4.5\Flaherty.Mapping.dll" target="lib\net45" />
+    <file src="$bin$\v4.5\Flaherty.Mapping.MapQuest.Javascript.dll" target="lib\net45" />
+    <file src="$bin$\v4.5\Flaherty.Mapping.MapQuest.WebControls.dll" target="lib\net45" />
+  </files>
+</package>

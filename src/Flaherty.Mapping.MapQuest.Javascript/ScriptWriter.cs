@@ -54,6 +54,20 @@ namespace Flaherty.Mapping.MapQuest.Javascript
             var script = new StringBuilder();
             script.AppendLine("<script type=\"text/javascript\">");
             script.AppendLine("//<![CDATA[");
+
+            if (this.map.Options != null && this.map.Options.ResizeEnabled)
+            {
+                script.AppendLine(string.Format("\tfunction SizeMap_{0}() {{", this.map.Target));
+                script.AppendLine(string.Format("\t\tvar mapDiv = document.getElementById('{0}');", this.map.Target));
+                script.AppendLine("\t\tif (mapDiv['resizeWidth']) {");
+                script.AppendLine("\t\t\tmapDiv.style.width = mapDiv.parentElement.offsetWidth + 'px';");
+                script.AppendLine("\t\t}");
+                script.AppendLine("\t\tif (mapDiv['resizeHeight']) {");
+                script.AppendLine("\t\t\tmapDiv.style.height = mapDiv.parentElement.offsetHeight + 'px';");
+                script.AppendLine("\t\t}");
+                script.AppendLine("\t}");
+            }
+
             script.AppendLine(string.Format("\tfunction LoadMap_{0}() {{", this.map.Target));
 
             var options = "{}";
@@ -63,8 +77,25 @@ namespace Flaherty.Mapping.MapQuest.Javascript
                 options = JsonConvert.SerializeObject(this.map.Options);
             }
 
+            if (this.map.Options != null && this.map.Options.ResizeEnabled)
+            {
+                script.AppendLine(string.Format("\t\tvar mapDiv = document.getElementById('{0}');", this.map.Target));
+                script.AppendLine(
+                    "\t\tmapDiv['resizeWidth'] = mapDiv.style.width == null || mapDiv.style.width == '' || mapDiv.style.width == 'auto';");
+                script.AppendLine(
+                    "\t\tmapDiv['resizeHeight'] = mapDiv.style.height == null || mapDiv.style.height == '' || mapDiv.style.height == 'auto';");
+                script.AppendLine(string.Format("\t\tSizeMap_{0}();", this.map.Target));
+                script.AppendLine("\t\tMQA.EventUtil.observe(window, 'resize', function() {");
+                script.AppendLine(string.Format("\t\t\tSizeMap_{0}();", this.map.Target));
+                script.AppendLine(string.Format("\t\t\tvar mapDiv = document.getElementById('{0}');", this.map.Target));
+                script.AppendLine("\t\t\tvar resizeMap = new MQA.Size(mapDiv.style.width, mapDiv.style.height);");
+                script.AppendLine(string.Format("\t\t\twindow.map_{0}.setSize(resizeMap);", this.map.Target));
+                script.AppendLine("\t\t});");
+            }
+
             script.AppendLine(string.Format("\t\tvar mapOptions = {0};", options));
             script.AppendLine("\t\tvar map = new MQA.TileMap(mapOptions);");
+            script.AppendLine(string.Format("\t\twindow.map_{0} = map;", this.map.Target));
 
             var pinIndex = 0;
             foreach (var pin in this.map.Pins)
@@ -127,6 +158,7 @@ namespace Flaherty.Mapping.MapQuest.Javascript
             }
 
             script.AppendLine("\t}");
+
             script.AppendLine(string.Format("\tMQA.EventUtil.observe(window, 'load', LoadMap_{0});", this.map.Target));
             script.AppendLine("//]]>");
             script.AppendLine("</script>");

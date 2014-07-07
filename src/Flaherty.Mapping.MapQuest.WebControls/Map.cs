@@ -81,6 +81,9 @@ namespace Flaherty.Mapping.MapQuest.WebControls
             }
         }
 
+        /// <summary>
+        /// Gets or sets the boundary.
+        /// </summary>
         public Boundary Boundary { get; set; }
 
         /// <summary>
@@ -128,6 +131,22 @@ namespace Flaherty.Mapping.MapQuest.WebControls
             set
             {
                 this.Options.Padding = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether resize enabled.
+        /// </summary>
+        public bool ResizeEnabled
+        {
+            get
+            {
+                return this.Options.ResizeEnabled;
+            }
+
+            set
+            {
+                this.Options.ResizeEnabled = value;
             }
         }
 

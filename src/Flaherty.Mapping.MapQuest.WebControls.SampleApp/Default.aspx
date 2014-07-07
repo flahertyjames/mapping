@@ -6,12 +6,12 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body style="margin:0">
     <form id="form1" runat="server">
     <mapping:Map ID="Map" runat="server"
         License="Open" MapType="OpenStreetMap" AutomaticBoundary="true"
         ShowMapTypeControl="true" ShowPanControl="true" ShowZoomControl="true"
-        Width="800" Height="600">
+        ResizeEnabled="true" Height="600">
         <Pins>
             <mapping:Pin Position="45.5,-122.5" Color="Green1" Text="1">
                 <InfoText>

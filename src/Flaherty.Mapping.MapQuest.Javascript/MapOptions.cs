@@ -44,6 +44,12 @@ namespace Flaherty.Mapping.MapQuest.Javascript
         public double? Padding { get; set; }
 
         /// <summary>
+        /// Gets or sets a value indicating whether resize enabled.
+        /// </summary>
+        [JsonIgnore]
+        public bool ResizeEnabled { get; set; }
+
+        /// <summary>
         /// Gets or sets the zoom level of the map view.
         /// </summary>
         [JsonProperty("zoom", NullValueHandling = NullValueHandling.Ignore)]
